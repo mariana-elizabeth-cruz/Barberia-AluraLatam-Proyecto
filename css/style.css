@@ -253,7 +253,6 @@ footer img {
     transition: all 0.3s;
 }
 .iconos a:hover {
-    /* font-size: 38px; */
     transform: scale(1.1);
     font-weight: bold;
     color: #2b494b;
@@ -263,6 +262,10 @@ footer img {
 .boxFormulario {
     width: 940px;
     margin:  0 auto;
+    font-family: 'Catamaran', sans-serif;
+}
+.boxContacto label {
+    font-size: 25px;
 }
 
 form {
@@ -279,6 +282,20 @@ form input {
     margin: 20px;
     padding: 8px;
     width: 50%;
+}
+.select {
+    font-size: 20px;
+}
+.btnEnviar {
+    background-color: #23454d;
+    border: #08181b;
+    transition: all 0.1s;
+}
+.btnEnviar:hover {
+    background-color: #486265;
+    transform: scale(1.1);
+    color: #000000;
+    font-weight: bold;
 }
 
 /* MEDIA QUERY */
