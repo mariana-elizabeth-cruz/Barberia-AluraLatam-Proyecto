@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barberia Alura</title>
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Navegador -->
+    <header>
+        <nav class="navbar navbar-expand-lg fondoNav">
+            <div class="container-fluid ">
+                <div class="estiloLogo">
+                    <a href="./index.html">
+                        <img src="./imagenes/logo.png" alt="Logo de barberia" />
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 estiloLink">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/producto.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="portada">
+                <img src="./imagenes/banner.jpg" alt="Salon de barberia">
+            </div>
+        </section>
+
+        <section>
+            <div class="container principal">
+                <h1>Barberia Alura</h1>
+                <div class="card mb-3 about">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./imagenes/ejemplo.jpg" class="img-fluid rounded-start rounded-pill" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body aboutText">
+                                <h2 class="card-title">Nosotros</h2>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mapa">
+            <div>
+                <h2 class="subTitulo">Nuesta Ubicación</h2>
+                <p>Nuestro establecimiento se encuentra en la ciudad de Santiago del Estero</p>
+                <div class="boxMapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.7033799802675!2d-64.26403341784682!3d-27.788112368798885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53a366042f6b%3A0x49d68ead86180942!2sGaler%C3%ADa%20Paseo%20de%20la%20Ciudad!5e0!3m2!1ses-419!2sar!4v1688247042765!5m2!1ses-419!2sar"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="diferenciales">
+            <h3>Diferenciales</h3>
+            <div class="contenidoDiferenciales">
+                <ul class="listaDirenciales">
+                    <li class="items">Atencion personalizada a los clientes</li>
+                    <li class="items">Espacio diferenciado</li>
+                    <li class="items">Localización</li>
+                    <li class="items">Profesionales calificados</li>
+                    <li class="items">Puntualidad</li>
+                    <li class="items">Limpieza</li>
+                </ul>
+                <img class="imgDiferenciales" src="./imagenes/diferencial.jpg" alt="">
+            </div>
+            <div class="video">
+                <h3>Para conocernos mejor</h3>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/15hlKXV5yHs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="./imagenes/logo-footer.png" alt="">
+        <h3 class="footerText"> &copy Copyright Proyecto Alura | 2023</h3>
+        <ul class="iconos">
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="bi bi-youtube"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
