@@ -97,11 +97,6 @@ body {
     padding: 25px;
 }
 
-.mapa p {
-    margin: 0 0 2em;
-    text-align: center;
-}
-
 .subTitulo {
     font-family: 'Abel', sans-serif;
     text-align: center;
@@ -114,6 +109,14 @@ body {
 
 .subTitulo:first-letter {
     font-weight: bold;
+}
+
+.mapa p {
+    font-family: 'Abel',
+    sans-serif;
+    font-size: 30px;
+    margin: 0 0 2em;
+    text-align: center;
 }
 
 /* Seccion diferenciales */
@@ -313,6 +316,8 @@ form input {
 }
 
 .btnEnviar {
+    /* width: 180px;
+    height: 70px; */
     background-color: #23454d;
     border: #08181b;
     transition: all 0.1s;
@@ -363,7 +368,9 @@ form input {
 
     /* Seccion diferenciales */
     .diferenciales h3 {
-        font-size: 50px;
+        font-size: 30px;
+        margin: 10px 5px 10px 5px;
+        padding: 10px 5px 10px 5px;
     }
 
     .contenidoDiferenciales {
@@ -374,7 +381,7 @@ form input {
     }
 
     .imgDiferenciales {
-        width: 300px;
+        width: 250px;
     }
 
     .imgDiferenciales:hover {
@@ -382,15 +389,15 @@ form input {
     }
 
     .principal h1 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .video {
-        width: 360px;
+        width: 320px;
     }
 
     .video iframe {
-        width: 350px;
+        width: 320px;
     }
 
     /* Sección productos */
@@ -427,7 +434,7 @@ form input {
 
 /* MEDIA QUERY TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
-
+ /* inicio */
     /* Navegador */
     /* .estiloLink a {
         transition: none;
@@ -437,9 +444,27 @@ form input {
     } */
 
     .principal h1 {
-        font-size: 130px;
+        font-size: 110px;
     }
 
+    .contenidoDiferenciales {
+        width: 500px;
+    }
+
+    .diferenciales h3 {
+        font-size: 4rem;
+    }
+
+    .imgDiferenciales {
+        width: 340px;
+        height: 240px;
+        margin-top: 25px;
+    }
+    .imgDiferenciales:hover {
+        display: none;
+    }
+
+    /* Productos */
     .productos {
         width: 440px;
         display: flex;
@@ -451,13 +476,16 @@ form input {
         margin: 15px;
     }
 
-    .contenidoDiferenciales {
-        width: 500px;
+    .productos li:hover {
+        display: none;
+    }
+    
+    .productos li:active {
+        display: none;
     }
 
-    .imgDiferenciales {
-        width: 300px;
-        height: 240px;
-        margin-top: 25px;
+    .productos li:hover h2 {
+        display: none;
     }
+
 }
