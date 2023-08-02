@@ -4,12 +4,12 @@
 
 body {
     margin: 0;
-    background: linear-gradient(to bottom, #514e70, #51adb0);
+    background: linear-gradient(to bottom, #8ea599, #e6e3d1);
 }
 
 /* Navegador */
 .fondoNav {
-    background: #519da4;
+    background: #678683;
 }
 
 .estiloLink {
@@ -56,15 +56,15 @@ body {
     text-align: center;
     font-size: 175px;
     text-transform: uppercase;
-    color: #08181b;
+    color: #0A0A0A;
     letter-spacing: 10px;
     text-shadow: 2px 2px 25px #091518,
-        2px 2px 5px #7bd3e3;
+        2px 2px 5px #E6E3D1;
 }
 
 /* Inicio*/
 .about {
-    background: #224a74;
+    background: #C4C9B2;
     box-shadow: 10px 10px 30px #000000;
     border-radius: 10px;
 }
@@ -73,14 +73,14 @@ body {
     text-align: center;
     font-family: 'Abel', sans-serif;
     font-size: 75px;
-    color: black;
+    color: #4C4D45;
 }
 
 .aboutText p {
     text-align: center;
     font-family: 'Abel', sans-serif;
     font-size: 25px;
-    color: black;
+    color: #4C4D45;
 }
 
 .aboutText::first-letter {
@@ -101,7 +101,7 @@ body {
     font-family: 'Abel', sans-serif;
     text-align: center;
     font-size: 80px;
-    color: black;
+    color: #0A0A0A;
     clear: left;
     margin: 15px 10px 10px 10px;
     padding: 15px;
@@ -124,7 +124,7 @@ body {
     text-align: center;
     font-family: 'Abel', sans-serif;
     font-size: 5rem;
-    color: black;
+    color: #3B392C;
     margin: 10px;
     padding: 15px;
 }
@@ -148,7 +148,7 @@ body {
     line-height: 1.5;
     padding: 5px;
     font-size: 1rem;
-    color: black;
+    color: #3B392C;
     list-style-type: none;
 }
 
@@ -180,18 +180,22 @@ body {
 .textoProductos h1 {
     font-family: 'Abel', sans-serif;
     text-align: center;
-    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1F313C;
     font-size: 70px;
     margin-top: 20px;
     padding: 10px;
 }
 
 .productos {
-    width: 940px;
     margin: 0 auto;
     padding: 50px;
     display: flex;
-    vertical-align: baseline;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
     font-family: 'Abel', sans-serif;
 }
 
@@ -199,6 +203,7 @@ body {
     display: inline-block;
     text-align: center;
     width: 30%;
+    height: 400px;
     vertical-align: top;
     margin: 0 1.5%;
     padding: 30px 20px;
@@ -208,20 +213,13 @@ body {
 }
 
 .productos li:hover {
-    border-color: rgb(148, 148, 135);
-}
-
-.productos li:active {
-    border-color: green;
+    border-color: #101C23;
+    border-width: 4px;
 }
 
 .productos h2 {
     font-size: 34px;
     font-weight: bold;
-}
-
-.productos li:hover h2 {
-    font-size: 31px;
 }
 
 .productos img {
@@ -246,7 +244,7 @@ body {
 
 /* Footer */
 footer {
-    background: #406c6e;
+    background: #CECCB8;
     text-align: center;
     width: 100%;
     padding: 10px;
@@ -316,20 +314,19 @@ form input {
 }
 
 .btnEnviar {
-    /* width: 180px;
-    height: 70px; */
-    background-color: #23454d;
+    /* background-color: #23454d; */
+    background-color: #1C2D38;
     border: #08181b;
     transition: all 0.1s;
-    color: white;
+    color: #E6E3D1;
     margin-left: 45px;
     padding: 10px;
 }
 
 .btnEnviar:hover {
-    background-color: #486265;
+    background-color: #D9D6C5;
     transform: scale(1.1);
-    color: #000000;
+    color: #172630;
     border: 1px solid black;
     font-weight: bold;
 }
@@ -344,9 +341,10 @@ form input {
         padding: 5px;
     }
 
-   /* .estiloLink a:hover { 
-        display: none;
-    } */
+    .estiloLink a:hover { 
+        transform: none;
+        color: black;
+    }
 
     /* Abaut */
     .aboutText h2 {
@@ -403,9 +401,11 @@ form input {
     /* Sección productos */
     .productos {
         width: 300px;
-        display: flex;
-        flex-direction: column;
         padding: 15px;
+    }
+
+    .productos li:hover {
+        border-color: black;
     }
 
     .textoProductos h1 {
@@ -422,26 +422,27 @@ form input {
         width: 130px;
     }
 
-    .iconos a {
-        transition: none;
-    }
-
     .iconos a:hover {
-        display: none;
+        transform: none;
+        color: black;
     }
 
 }
 
 /* MEDIA QUERY TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
- /* inicio */
-    /* Navegador */
-    /* .estiloLink a {
-        transition: none;
+
+    /* Navbar */
+    .estiloLink a {
+        font-size: 18px;
+        margin: 10px;
+        padding: 5px;
     }
+
     .estiloLink a:hover {
-        display: none;
-    } */
+        transform: none;
+        color: black;
+    }
 
     .principal h1 {
         font-size: 110px;
@@ -465,27 +466,25 @@ form input {
     }
 
     /* Productos */
-    .productos {
-        width: 440px;
-        display: flex;
-        flex-direction: column;
-    }
-
     .productos li {
-        width: 350px;
-        margin: 15px;
+        height: 330px;
+    }
+    .productos h2 {
+        font-size: 25px;
     }
 
     .productos li:hover {
-        display: none;
-    }
-    
-    .productos li:active {
-        display: none;
+        border-color: black;
+    } 
+
+    .productos p {
+        font-size: 15px;
     }
 
-    .productos li:hover h2 {
-        display: none;
+    /* Footer */
+    .iconos a:hover {
+        transform: none;
+        color: black;
     }
 
 }
