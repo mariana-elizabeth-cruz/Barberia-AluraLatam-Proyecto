@@ -1,7 +1,7 @@
 # Barberia AluraLatam
 Proyecto realizado para el curso Programación para Principiantes de AluraLatam y Oracle. Sitio web para simular una tienda que muestra una Barberia y los diferentes productos que ofrecen.
 
-## Tecmologias utilizadas
+## Tecnologías utilizadas
 - HTML5
 - CSS3
 - Bootstrap
